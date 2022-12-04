@@ -1,0 +1,63 @@
+<nav class="container">
+    <ul style="height: 40px;">
+            <a href="#">
+                <img class="img-logo-class" src="assets/logo-portafolio.png" alt="ss" height="35px" style="padding-left: 10px;">
+            </a>
+            <p class="titleNavBar" style="height: 20px;">DEVRA DEVELOPER</p>
+            
+        
+        
+        <input type="checkbox" id="check" style="display: none;">
+        <label for="check">
+            <img class="img-menu-hamburguesa-class" src="assets/menu-hamburguesa.svg" alt="manú hamburguesa">    
+        </label>
+        
+
+
+
+        <!--
+        <div class="buttons-nav__div">
+            <li (click)="UpdateCurrentPageVar('ContactPage')">
+                <span>Contact</span>
+            </li>   
+            <li (click)="UpdateCurrentPageVar('BlogPage')">
+                <span>Blog</span>
+            </li>
+            <li (click)="UpdateCurrentPageVar('AboutPage')">
+                <span>About</span>
+            </li>
+            <li (click)="UpdateCurrentPageVar('PortafolioPage')">
+                <span>Portafolio</span>
+            </li>
+            <li (click)="UpdateCurrentPageVar('ServicesPage')">
+                <span>Services</span>
+                </li>
+            <li (click)="UpdateCurrentPageVar('HomePage')">
+                <span>Home</span>
+            </li>
+        </div>
+        -->
+        <div class="buttons-nav__div">
+            <li (click)="UpdateCurrentPageVar('ContactPage')" [routerLink]="['/contact']">
+                <span>Contact</span>
+            </li>   
+            <li (click)="UpdateCurrentPageVar('BlogPage')" [routerLink]="['/blog']">
+                <span>Blog</span>
+            </li>
+            <li (click)="UpdateCurrentPageVar('AboutPage')" [routerLink]="['/about']">
+                <span>About</span>
+            </li>
+            <li (click)="UpdateCurrentPageVar('PortafolioPage')" [routerLink]="['/portfolio']">
+                <span>Portfolio</span>
+            </li>
+            <li (click)="UpdateCurrentPageVar('ServicesPage')" [routerLink]="['/services']">
+                <span>Services</span>
+                </li>
+            <li (click)="UpdateCurrentPageVar('HomePage')" [routerLink]="['/home']">
+                <span>Home</span>
+            </li>
+        </div>
+
+
+    </ul>
+</nav>

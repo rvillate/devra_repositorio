@@ -1,0 +1,96 @@
+@import '../../../assets/scss/styles.scss';
+
+
+
+nav ul div li span
+{
+    text-align: center;
+    color: $color_foreground_text_invert;
+}
+
+nav ul div li a 
+{
+    text-decoration: none;
+}
+
+nav ul div li
+{    
+    //background-color: #7c003a;
+    padding: 11px 20px 11px 20px;
+    transition-duration: .5s;
+    cursor: pointer;
+    float: right;
+    overflow: auto;
+}
+
+.buttons-nav__div{
+    display: inline;
+    translate: -100%;
+    transition: .5s;
+    //opacity: 0;
+}
+nav ul div li:hover
+{    
+    background-color: #000000;
+    transition-duration: .1s;
+}
+nav
+{
+    background-color: $navbar_color_backgroud;
+    height: 40px;
+    position:fixed;;
+    width: 100%;
+    z-index:1;
+    user-select: none;
+    
+}
+
+.img-menu-hamburguesa-class
+{
+    visibility:hidden;
+    cursor: pointer;
+    height: "35px";
+    margin: 5px 5px 0 0;    
+}
+
+.titleNavBar
+{
+    color: #ffffff;
+    position: absolute;
+    display: inline;
+    padding: 10px 0 0 10px;
+}
+
+@media (max-width: 700px)
+{
+    nav ul div li
+    {    
+        float:none;
+        background-color: $navbar_color_backgroud;
+    }
+
+    .img-menu-hamburguesa-class
+    {
+        visibility: visible;
+        float: right;
+    }
+   
+    .buttons-nav__div{
+        display:block;
+    }
+    input[type=checkbox]:checked ~ .buttons-nav__div
+    {   
+        display: block;
+        transition: .5s;
+        position: relative;
+        translate: 0%;  
+        //opacity: 1; 
+    }
+  /*  input:not[type=checkbox]:checked ~ .buttons-nav__div{   
+        display: none; 
+    }
+  */
+    
+    
+}
+

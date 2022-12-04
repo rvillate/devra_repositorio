@@ -42,8 +42,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "100kb",
+                  "maximumError": "150kb"
                 }
               ],
               "fileReplacements": [
@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "portafolio:build:production",
+            "firebaseProject": "portfolio-9a6b6",
+            "firebaseHostingSite": "devra"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a681c7ea-6380-44ff-97ce-d2903d96213d"
   }
 }

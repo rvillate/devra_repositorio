@@ -1,0 +1,193 @@
+@import '../../../assets/scss/styles.scss';
+
+
+
+.estrellas
+{
+    color: rgb(255, 0, 0);
+}
+
+//FOTO_PERFIL
+.table_foto_perfil
+{
+    position: relative;
+    height: 400px;
+    display: inline-block;
+    width: 50%;
+}
+
+
+#foto_perfil
+{
+    width: 25vw;
+    border-radius: 50%;
+    min-width: 250px;
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+    position: absolute;
+    left: 25%;
+    top: 20px;
+    transition: .2s;
+    animation: anim_foto_perfil 10s infinite linear;
+    //box-shadow: 0 3000px rgba(204, 0, 255, 0.4) inset;
+    //object-fit: cover;
+    //pointer-events: none;
+}
+#foto_perfil:hover
+{
+    scale: 1.1;
+    transition: .2s;
+    -webkit-filter: none; /* Webkit */
+    filter: none; /* IE6-9 */
+    filter: none; /* W3C */
+    
+}
+
+
+.table_datos_perfil
+{
+    position: relative;
+    height: 400px;
+    display: inline-block;
+    //background-color: Red;
+    width: 50%;
+}
+
+.datos_autor
+{
+    position: absolute;
+    left: 0%;
+    top: 70px;
+    width: 100%;
+    color: $color_foreground_text;
+    user-select: none;
+}
+
+.datos_autor h1
+{
+    font-size: 3.5vw;
+    text-shadow: 5px 5px 30px rgb(0, 0, 0);
+    
+}
+.datos_autor h2
+{
+    font-size: 2vw;
+    //text-decoration: underline;
+    padding-top: 100px;
+
+}
+
+
+@media (max-width: 700px) {
+    .table_foto_perfil
+    {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .table_datos_perfil
+    {
+        display: block;
+        width: 100%;    
+        height: 140px;    
+    }
+    #foto_perfil
+    {
+        margin-left: 35%;
+        margin-right: auto;
+        display: block;   
+        position:static;
+    }    
+    .datos_autor
+    {
+        display:  block;
+        padding: 0 0 0 0;
+        top: 10px;
+        text-align: center;
+    }
+    .datos_autor h1
+    {
+        font-size: 1em;
+    }
+
+
+    .datos_autor h1
+    {
+        font-size: 2em;
+    }
+    .datos_autor h2
+    {
+        font-size: 1.5em;
+        padding-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+//Animacion foto_perfil
+@keyframes anim_foto_perfil {
+    0%{
+        box-shadow: -10px -10px 60px 10px rgb(76, 3, 158);
+    }   
+    25%{
+        box-shadow: 10px -10px 30px 10px rgb(140, 3, 158);
+    }
+    50%{
+        box-shadow: 10px 10px 60px 10px #4c039e;
+    }
+    75%{
+        box-shadow: -10px 10px 30px 10px #5a0275;
+    }
+    100%{
+        box-shadow: -10px -10px 60px 10px rgb(76, 3, 158);
+    }
+}
+
+//Section 1
+.about_me
+{
+    width: 100%;
+    display: block;
+    color: $color_foreground_text;
+    text-align: center;
+    font-size: 1.2em;
+    
+    padding: 0 20% 0 20%;
+    
+    //max-width: 800px;
+}
+@media (max-width: 700px) {
+    .about_me
+{
+    padding: 0 5% 0 5%;
+}
+}
+//SKILLS
+.section_info_title .item
+{
+    color: rgb(78, 78, 78);
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+    transition: .1s;
+    user-select: none;
+}
+
+.section_info_title .item:hover
+{
+    color: white;
+    padding: 10px;
+    scale: 1.5;
+    transition: .2s;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 20px;
+}

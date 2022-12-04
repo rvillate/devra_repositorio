@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "devra-1c466": {
+      "hosting": {
+        "portafolio": [
+          "devra"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "devra-1c466"
+  }
+}

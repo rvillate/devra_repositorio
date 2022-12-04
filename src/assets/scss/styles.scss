@@ -1,0 +1,46 @@
+//Fondo de pantalla
+$page_backgroud: #e2e2e2;
+
+//NAVBAR
+$navbar_color_backgroud: #3b3c80;
+
+
+//TEMAS
+$color_background_titles: #716db1 !default;//Color de fonto para los titulos (cajas)
+$color_foreground_text: rgb(30, 0, 87) !default;//Color de fonto del texto
+$color_foreground_text_invert: rgb(210, 212, 247) !default;
+$color_box_projects: #3b3c80 !default;
+$color_box_projects_light: #423b80 !default;
+
+
+
+h3, span{
+    color: $color_foreground_text;
+}
+
+.section_info_title
+{
+    vertical-align: middle;
+    text-align: center;
+    //padding-top: 50px;
+}
+
+.section_info_title h2
+{
+    background-color: $color_background_titles;
+    color: $color_foreground_text_invert;
+    padding: 5px 20px;
+}
+
+.align_left_gradient_h3
+{
+    background: linear-gradient(
+        to right,
+        $color_background_titles, 
+        transparent
+      );    text-align: left;
+    display: block;
+    width: 400px;
+    padding: 5px 0 5px 40px;
+    border-radius: 0px;
+}
