@@ -8,6 +8,8 @@ import { Page404NotFoundComponent } from './pages/page404-not-found/page404-not-
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { IMCCorporalComponent } from './pages/apps/imc-corporal/imc-corporal.component';
+import { AndroidComponent } from './pages/portafolio-page/android/android/android.component';
+import { VelocimetroWearos1Component } from './pages/portafolio-page/android/android/velocimetro-wearos1/velocimetro-wearos1.component';
 
 const routes: Routes = [
   
@@ -19,6 +21,9 @@ const routes: Routes = [
   {path: 'blog', component: BlogPagesComponent},
   {path: 'contact', component: ContactPageComponent},
   {path: 'apps/IMC-Corporal', component: IMCCorporalComponent},
+  {path: 'apps/android', component: AndroidComponent},
+  {path: 'apps/android/velocimetro-wearos', component: VelocimetroWearos1Component},
+  
   
   {path: '**', component: Page404NotFoundComponent},
   

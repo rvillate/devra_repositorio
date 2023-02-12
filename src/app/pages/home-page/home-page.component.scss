@@ -34,16 +34,18 @@
     //object-fit: cover;
     //pointer-events: none;
 }
+
+/*
 #foto_perfil:hover
 {
     scale: 1.1;
     transition: .2s;
-    -webkit-filter: none; /* Webkit */
-    filter: none; /* IE6-9 */
-    filter: none; /* W3C */
+    -webkit-filter: none;
+    filter: none;
+    filter: none;
     
 }
-
+*/
 
 .table_datos_perfil
 {
@@ -186,7 +188,7 @@
 {
     color: white;
     padding: 10px;
-    scale: 1.5;
+    scale: 1.1;
     transition: .2s;
     background-color: rgba(0, 0, 0, 0.548);
     border-radius: 20px;
